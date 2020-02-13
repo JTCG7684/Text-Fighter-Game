@@ -1,13 +1,19 @@
-﻿namespace Fighter_Game_Metadata
-{
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Fighter_Game_Metadata;
 
+namespace Fighter_Game_Metadata
+{
     class GlobalVariables
     {
-        bool PlayerOneTurn;
-        bool PlayerTwoTurn;
-        string StartDecision;
-        string Tutorial;
-        int GameRound;
+        public bool PlayerOneTurn;
+        public bool PlayerTwoTurn;
+        public string StartDecision;
+        public string Tutorial;
+        public int GameRound;
 
     }
 
@@ -63,6 +69,13 @@
         public string TankAbilities()
         {
             return "Placeholder";
+        }
+    }
+
+    class Startup
+    {
+        void DetermineFighterPlayerOne() {
+            int g = 1;
         }
     }
 }
